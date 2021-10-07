@@ -1,0 +1,110 @@
+/* this is a comment! */
+#hPURPLENOTGREEN{
+    color:purple;
+}
+/* class selector + combining 2 selectors, all <p> under class turn blue*/
+p.blue{
+    color:blue;
+}
+/* changes all headers <h3> to green + margin-top by 1cm */
+h3{
+    color:rgb(15,180,10);
+    margin-top: 1cm;
+}
+/* Descendant combinator, changes  font of list items within the
+unordered list to cursive */
+ul li{
+    font-family:cursive;
+}
+/* Child combinator */
+/* html code within <nav> within <main> goes left 50px */
+main > nav{
+    margin-left:50px;
+}
+/* General sibling combinator */
+/* All <p> after <i> become this font */
+i ~ p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Adjacent sibling combinator */
+/* all <i> adjacent to <b> become this font */
+b + i{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* Secret message! */
+p10{
+    display:none;
+}
+
+/* if the target is found in a list, underline it*/
+li[target]{
+    text-decoration:underline;
+}
+/*element selector, turns all <p> pink, except <p> in .blue class*/
+p{
+    color:#F1F;
+    padding: 10px 20px 10px 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+ul{
+    margin:20px 20px 40px 150px;
+    font-size:1.2em;
+}
+ol{
+    font-size:1.3rem;
+    margin-left:17ex;
+    display:inline-block;
+}
+em{
+    color:orange;
+    margin-right:30px;
+    text-decoration:underline;
+    text-align:end;
+}
+/* selector list*/
+h2, h6{
+    margin-bottom:40px;
+    size:10pc;
+    padding-bottom:20px;
+}
+summary{
+    padding-top:10px;
+}
+p1{
+    color: #1f1;;
+    color:hsl(60,50,80);
+    margin:auto;
+}
+b{
+    display:flex;
+    border-style:dashed;
+    border-color:aquamarine;
+    border-width:5px;
+    border-radius:100px;
+    padding-right:10px;
+}
+/* background for everything is linen, including the inside
+of text boxes, buttons, etc.*/
+* {
+    background-color: linen;
+}
+form{
+    max-width:500px;
+    max-height:500px;
+}
+textarea{
+    padding-left: 100px;
+    position:sticky;
+}
+button{
+    height:50px;
+    width:100px;
+    position:relative;
+}
+/*Pseudo Class selector, "enter" in the button turns blue when hovered*/
+button:hover{
+    color:blue;
+}
+button:active{
+    color:red;
+}

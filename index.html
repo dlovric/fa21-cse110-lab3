@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="mystyle.css">
         <title>Meeting!</title>
         <meta charset="UTF-8" />
         <link rel="icon" 
         type="image/png" 
         href="/test.png"/>
+        <style>
+            h1 {
+              color: rgb(175, 22, 22);
+              text-align:center;
+            }
+            </style>
     </head>
     <body>
         <main>
 
             <header>
                 <h1>Pomodoro Timer First Brainstorm</h1>
-                <h2>Documentation</h2>
-                <h3>10/01/21</h3>
+                <h2 style="color:blue;">Documentation</h2>
+                <h3 id="hPURPLENOTGREEN">10/01/21</h3>
             </header>
             <nav>
+                <p10>Secret message here!</p10>
                 <h3>Attendees:</h3>
                 <ul>
-                    <li>Dominik</li>
+                    <li target="foo">Dominik</li>
                     <li>John</li>
                     <li>Sean</li>
                     <li>Augustine</li>
@@ -34,12 +42,15 @@
                 <section>
                     <p>This was the first part of the meeting</p>
                     <b>This was important!</b>
-                    <br>
-                    <i>We also talked about this here.</i>
+                    <i>And we also talked about this here.</i>
+                    <p>Some information here</p>
+                    <p>Some more information here</p>
+                    <p>And some more information here as well!</p>
                 </section>
                 <hr>
                 <section>
-                    <p>This was the second part of the meeting</p>
+                    <p1>This was the second part of the meeting</p1>
+                    <br>
                     <strong>This was also important!</strong>
                     <br>
                     <img src="https://images.unsplash.com/photo-1610447847416-40bac442fbe6" alt="Dark photo" width="50">
@@ -75,7 +86,7 @@
                             <option value="Other">
                             </datalist>
                         <br>
-                        <p>Choose your language you prefer to code in:</p>
+                        <p class="blue">Choose your language you prefer to code in:</p>
 
                             <select>
                             <option value="C/C#/C++">C/C#/C++</option>
