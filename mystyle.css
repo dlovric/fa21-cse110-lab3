@@ -108,3 +108,24 @@ button:hover{
 button:active{
     color:red;
 }
+@media screen and (min-width: 30em) and (orientation: portrait){};
+.absentees{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-basis:auto;
+    flex-grow:1;
+}
+.absentees > div {
+    width: 100px;
+    text-align: center;
+}
+.grid{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+
+}
+.grid > div{
+    text-align: center;
+}
