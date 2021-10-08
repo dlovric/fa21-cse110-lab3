@@ -1,4 +1,8 @@
 /* this is a comment! */
+@font-face {
+    font-family: Ephesis-Regular;
+    src: url("Ephesis-Regular.ttf");
+}
 #hPURPLENOTGREEN{
     color:purple;
 }
@@ -10,6 +14,7 @@ p.blue{
 h3{
     color:rgb(15,180,10);
     margin-top: 1cm;
+    font-family: Ephesis-Regular;
 }
 /* Descendant combinator, changes  font of list items within the
 unordered list to cursive */
@@ -108,7 +113,9 @@ button:hover{
 button:active{
     color:red;
 }
-@media screen and (min-width: 30em) and (orientation: portrait){};
+@media screen and (min-width: 30em) and (orientation: portrait){
+    
+};
 .absentees{
     display:flex;
     flex-wrap:nowrap;
